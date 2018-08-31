@@ -1,0 +1,13 @@
+ <H1>book issued is <%=addbookejs.book_name%></H1>
+<% console.log("HI");for(var i=0;i<newlyissue_bookejs.length;i++)
+{ %>
+<h1>HERE</h1>
+    <H1>book issued is <%=newlyissue_bookejs[i].book_name%></H1>
+<p>Id of the book is <%=newlyissue_bookejs[i].id%> </p>
+<p>Name of the student is <%=newlyissue_bookejs[i].student_name%> </p>
+<p>ID of the student is <%=newlyissue_bookejs[i].student_id%> </p>
+<p><%=newlyissue_bookejs[i].edition%> </p>
+<span><%=newlyissue_bookejs[i].created.toDateString()%></span>
+<% } %>
+
+<a href="/genre">Back</a>

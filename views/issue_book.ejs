@@ -1,0 +1,18 @@
+<% include partials/header%>
+<h1>Issue Book by <%=currentUser.username%></h1>
+
+<form class ="container" action="genre/<%=genre_id%>/add/<%=issued_id%>/new_issue/display" method="POST">
+    <input type="text" name="bookandstud[id]" value="<%=Math.floor(Math.random() * 255);%>">
+    <input type="text" name="bookandstud[student_name]" value="<%=currentUser.username%>">
+    <input type="text" name="bookandstud[student_id]" placeholder="Student ID">
+  
+   
+    <input type="text" name="bookandstud[book_name]" value="<%=foundBookejs.book_name%>">
+     <input type="text" name="bookandstud[edition]" value="<%=foundBookejs.edition%>">
+     <input type="text" name="bookandstud[publisher]" value="<%=foundBookejs.publisher%>">
+      <input type="text" name="bookandstud[price]" value="<%=foundBookejs.price%>">
+       <input type="text" name="bookandstud[pages]" value="<%=foundBookejs.pages%>">
+       <input type="text" name="bookandstud[created]" value="<%=foundBookejs.created.toDateString()%>">
+       <button>Issue this book</button>
+</form>
+<% include partials/footer%>

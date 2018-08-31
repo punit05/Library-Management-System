@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Libraray Management System</title>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    
+    
+    
+</head>
+<body>
+<!--<nav class="navbar navbar-default">-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="navbar-header">-->
+<!--            <a class="navbar-brand" href="/" >-->
+<!--                LMS</a>-->
+                
+<!--        </div>-->
+<!--        <div class="collapse navbar-collapse">-->
+            <ul>
+                <%if(!currentUser){ %>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Signup</a></li>
+                <% }
+                else 
+                { %>
+                <p>Signed in as <%=currentUser.username%></p>
+                <li><a href="/logout">Logout</a></li>
+                <% } %>
+            </ul>
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->

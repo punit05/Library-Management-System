@@ -1,0 +1,15 @@
+<% include partials/header%>
+<h1>Add a New book to <%=genre.name%></h1>
+<form class ="container" action="/genre/<%=genre._id%>/add" method="POST">
+    <input type="text" name="add_book_comment[id]" value="<%=Math.floor(Math.random() * 255);%>">
+    <input type="text" name="add_book_comment[genre_name]" placeholder="Genre">
+    <input type="text" name="add_book_comment[book_name]" placeholder="Book Name">
+    <input   type="text" name="add_book_comment[image]" placeholder="Image">
+     <input type="text" name="add_book_comment[edition]" placeholder="Edition">
+     <input type="text" name="add_book_comment[publisher]" placeholder="Publisher">
+      <input type="text" name="add_book_comment[price]" placeholder="Price">
+       <input type="text" name="add_book_comment[pages]" placeholder="Pages">
+       
+       <button>Add New Book</button>
+</form>
+<% include partials/footer%>

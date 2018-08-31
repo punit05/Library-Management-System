@@ -1,0 +1,63 @@
+<% include partials/header%>
+
+
+    <h1>Book Genre</h1>
+     <%for(var i=0;i<genres_ejs.length;i++)
+    {
+    %>
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail" style="margin-bottom 15 px;">
+         <img src="<%=genres_ejs[i].image%>  ">
+    <div class="caption"> <strong><%=genres_ejs[i].name%></strong></div>
+    <div class="caption"> <strong><%=genres_ejs[i].desc%></strong></div>
+    
+    </div>
+     <p>
+        <a href="/genre/<%=genres_ejs[i]._id%>" class="btn btn-primary">Description and add a book</a>
+    </p>
+    </div>
+    
+   
+    <%}%>
+   
+    <a href="/genre/new">create another genre</a>
+    
+    
+    
+   <!--<a href="add_book.ejs">Add A New Book</a>-->
+   <!-- <div>-->
+   <!--     <h3>Textbook</h3>-->
+   <!--    <a href="add_book.ejs">   -->
+   <!-- <img id="image" src="https://images.wallpaperscraft.com/image/books_table_lamp_113765_1920x1080.jpg">-->
+   <!-- </a>-->
+   <!-- </div>-->
+    
+    
+    
+   <!--  <div>-->
+   <!--      <h3>Fiction</h3>-->
+   <!--       <a href="add_book.ejs">-->
+   <!-- <img  id="image" src="https://images.wallpaperscraft.com/image/pulp_fiction_john_travolta_vincent_vega_samuel_l_jackson_jules_winnfield_93731_1280x720.jpg" width="500px" height="300px">-->
+   <!-- </a>-->
+   <!-- </div>-->
+   <!-- </br>-->
+   <!-- </br>-->
+    
+   <!--  <div >-->
+   <!--      <h3>Novel</h3>-->
+   <!--       <a href="add_book.ejs">-->
+   <!-- <img  id="image" src="https://images.wallpaperscraft.com/image/fantasy_psychedelic_art_101906_1280x720.jpg" width="500px" height="300px">-->
+   <!-- </a>-->
+   <!-- </div>-->
+   <!-- </br>-->
+   <!-- </br>-->
+    
+   <!--  <div>-->
+   <!--      <h3>love Story</h3>-->
+   <!--       <a href="add_book.ejs">-->
+   <!-- <img  id="image" src="https://images.wallpaperscraft.com/image/silhouette_staircase_bw_125593_1280x720.jpg" width="500px" height="300px">-->
+   <!-- </a>-->
+   <!-- </div>-->
+  
+
+    
